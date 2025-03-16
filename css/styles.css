@@ -2,6 +2,9 @@
   --font-family: "Inter", sans-serif;
   --second-family: "HeadlandOne", sans-serif;
   --third-family: "Hammersmith One", sans-serif;
+  --main-title-color: #141414;
+  --main-text-color: #fff;
+  --avatar-language-color: #000;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
