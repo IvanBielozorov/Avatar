@@ -38,8 +38,13 @@ body {
 .header-position {
   display: flex;
   align-items: center;
+}
+.header {
   background-color: brown;
   background-image: linear-gradient(rgba(43, 74, 97, 0.87),rgba(43, 74, 97, 0.87)), url("../images/header_avatar.jpg");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-list {
   display: flex;
@@ -55,4 +60,22 @@ body {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
+}
+/* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!! */
+.avatar {
+  background-image: url("../images/avatar_water.jpg");
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.avatar-title {
+  display: none;
+}
+.avatar-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
 }
