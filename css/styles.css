@@ -32,3 +32,27 @@ img {
 body {
   font-family: var(--font-family);
 }
+.logo {
+  margin-right: 184px;
+}
+.header-position {
+  display: flex;
+  align-items: center;
+  background-color: brown;
+  background-image: linear-gradient(rgba(43, 74, 97, 0.87),rgba(43, 74, 97, 0.87)), url("../images/header_avatar.jpg");
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 38px;
+}
+.header-button {
+  margin-left: 228px;
+}
+.nav-link {
+  font-family: var(--font-family);
+  color: var(--main-text-color);
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
