@@ -1,3 +1,8 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "HeadlandOne", sans-serif;
+  --third-family: "Hammersmith One", sans-serif;
+}
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -15,9 +20,9 @@ img {
   height: auto;
 }
 .container {
-  width: 1440px;
+  width: 1062px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-right:15px;
+  padding-right: 15px;
 }
