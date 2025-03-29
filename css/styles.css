@@ -250,6 +250,7 @@ font-weight: 400;
 font-size: 36px;
 text-align: justify;
 color: #141414;
+margin-top: 75px;
 }
 .third-article-text {
   font-family: var(--font-family);
@@ -258,6 +259,17 @@ font-size: 24px;
 text-align: justify;
 color: #000;
 text-align: center;
+}
+.third-article-text::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 120px;
+  background-image: url("../images/eagle_two_arrows.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
 }
 /* !!!!!!!!NOT DISPLAY!!!!!!!!!!!!! */
 .first-quote-title {
