@@ -38,6 +38,7 @@ body {
 .header-position {
   display: flex;
   align-items: center;
+  column-gap: 49px;
 }
 .header {
   background-color: brown;
@@ -46,6 +47,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
+  display: flex;
+  align-items: center;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 204px;
+  padding-right: 48px;
 }
 .nav-list {
   display: flex;
@@ -53,7 +60,7 @@ body {
   column-gap: 38px;
 }
 .header-button {
-  margin-left: 228px;
+  /* margin-left: 228px; */
   display: flex;
   background: #0b0e66;
   border: 2px solid #26c7ea;
@@ -76,7 +83,6 @@ text-align: center;
 color: #fff;
 display: flex;
 align-items: center;
-padding: 0 10px;
 }
 .nav-link {
   font-family: var(--font-family);
@@ -88,18 +94,33 @@ padding: 0 10px;
 .switcher {
   display: flex;
   justify-content: end;
+  margin-right: 49px;
 }
 /* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!! */
 .first-article-title {
   margin-top: 75px;
-  padding-left: 170px;
-  padding-right: 170px;
-  padding-bottom: 4px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+text-align: justify;
+color: #0a3853;
 }
 .first-article-text {
-  padding-left: 649px;
-  padding-right: 649px;
-  padding-bottom: ;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-align: center;
+color: var(--avatar-language-color);
+}
+.first-article-text::after {
+  content: "";
+  display: block;
+  width: 400px;
+height: 120px;
+background-image: url("../images/eagle_two_arrows.png");
+background-repeat: no-repeat;
+margin: 0 auto;
+margin-bottom: 10px;
 }
 .avatar {
   background-image: url("../images/avatar_water.jpg");
@@ -158,16 +179,85 @@ padding: 0 10px;
 .avatar-info-phrase {
   display: flex;
   justify-content: center;
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+text-align: center;
+color: #141414;
+padding-top: 36px;
+}
+.avatar-info-phrase:nth-child(3) {
+padding-top: 450px;
+}
+.avatar-info-phrase::after {
+  content: "";
+  display: block;
+
 }
 .avatar-info-translation {
   display: flex;
   justify-content: center;
   align-items: end;
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+text-align: justify;
+color: #000;
+}
+.second-container {
+  display: flex;
+}
+.second-article-title {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+text-align: justify;
+color: #141414;
+margin-left: auto;
+margin-right: auto;
+margin-top: 75px;
+margin-bottom: 16px;
+
+}
+.second-article-text {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-align: justify;
+color: #000;
+text-align: center;
+}
+.second-article-text::after {
+    content: "";
+  display: block;
+  width: 400px;
+  height: 120px;
+  background-image: url("../images/eagle_two_arrows.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 .third-quote {
   width: 1438px;
   margin-left: auto;
   margin-right: auto;
+}
+.third-article-title {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+text-align: justify;
+color: #141414;
+}
+.third-article-text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-align: justify;
+color: #000;
+text-align: center;
 }
 /* !!!!!!!!NOT DISPLAY!!!!!!!!!!!!! */
 .first-quote-title {
@@ -220,9 +310,6 @@ padding-bottom: 45px;
 .avatar-info-list {
   display: flex;
 }
-.avatar-list {
-  padding-top: 180px;
-}
 .avatar-button {
   border: 3px solid #26c7ea;
 border-radius: 45px 0;
@@ -247,6 +334,27 @@ color: #26c7ea;
   height: 741px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+}
+.trailer-position {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+text-align: justify;
+color: #26c7ea;
+background: #0b0e66;
+border: 3px solid #26c7ea;
+border-radius: 45px 0;
+width: 260px;
+height: 80px;
 }
 /* !!!!!!!!!Footer!!!!!!!!!!!!!! */
 .footer {
