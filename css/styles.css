@@ -97,12 +97,17 @@ align-items: center;
   margin-right: 49px;
 }
 /* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!! */
+.first-quote-position {
+  display: flex;
+  justify-content: center;
+}
 .first-article-title {
+  width: 1100px;
   margin-top: 75px;
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 36px;
-text-align: justify;
+text-align: center;
 color: #0a3853;
 }
 .first-article-text {
@@ -172,9 +177,14 @@ margin-bottom: 10px;
   flex-wrap: wrap;
 }
 .avatar-info-item {
-  width: 320px;
-  height: 240px;
+  padding: 36px 28px;
+  background: rgba(255, 255, 255, 0.7);
   flex-basis: calc((100% - 2 * 36px) / 3);
+}
+.avatar-info-item:nth-child(1) {
+  background-image: url("../images/left_arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .avatar-info-phrase {
   display: flex;
@@ -187,14 +197,13 @@ text-align: center;
 color: #141414;
 padding-top: 36px;
 }
-.avatar-info-phrase:nth-child(3) {
-padding-top: 450px;
-}
-.avatar-info-phrase::after {
+/* .avatar-info-phrase::after {
   content: "";
   display: block;
-
-}
+  width: 152px;
+  height: 40px;
+  background-image: url("../images/left_arrow.png");
+} */
 .avatar-info-translation {
   display: flex;
   justify-content: center;
@@ -208,12 +217,14 @@ color: #000;
 }
 .second-container {
   display: flex;
+  justify-content: center;
 }
 .second-article-title {
+width: 857px;
 font-family: var(--font-family);
 font-weight: 400;
 font-size: 36px;
-text-align: justify;
+text-align: center;
 color: #141414;
 margin-left: auto;
 margin-right: auto;
@@ -240,23 +251,30 @@ text-align: center;
   margin-bottom: 10px;
 }
 .third-quote {
-  width: 1438px;
   margin-left: auto;
   margin-right: auto;
+  width: 1438px;
+}
+.third-quote-position {
+  display: flex;
+  justify-content: center;
 }
 .third-article-title {
+  width: 802px;
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 36px;
-text-align: justify;
+text-align: center;
 color: #141414;
 margin-top: 75px;
+  display: flex;
+  justify-content: center;
 }
 .third-article-text {
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 24px;
-text-align: justify;
+text-align: center;
 color: #000;
 text-align: center;
 }
@@ -307,20 +325,16 @@ text-align: center;
   height: 704px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 58px;
+  padding-bottom: 48px;
 }
 .avatar-info-second-title {
   font-family: var(--second-family);
 font-weight: 400;
 font-size: 32px;
-text-align: justify;
+text-align: center;
 color: var(--main-title-color);
-padding-top: 58px;
-padding-left: 471px;
-padding-right: 470px;
-padding-bottom: 45px;
-}
-.avatar-info-list {
-  display: flex;
+margin-bottom: 45px;
 }
 .avatar-button {
   border: 3px solid #26c7ea;
@@ -333,11 +347,6 @@ font-weight: 400;
 font-size: 24px;
 text-align: center;
 color: #26c7ea;
-}
-.avatar-info-item {
-  width: 320px;
-  height: 240px;
-  background: rgba(255, 255, 255, 0.7);
 }
 .video {
   background-image: url("../images/woman_avatar.jpg");
@@ -360,7 +369,7 @@ color: #26c7ea;
   font-family: var(--second-family);
 font-weight: 400;
 font-size: 24px;
-text-align: justify;
+text-align: center;
 color: #26c7ea;
 background: #0b0e66;
 border: 3px solid #26c7ea;
@@ -376,22 +385,23 @@ height: 80px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
+  height: 223px;
 }
 .footer-position {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 223px;
 }
 .footer-text {
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 20px;
-text-align: justify;
+text-align: center;
 color: var(--main-text-color);
 }
 .footer-text::after {
   content: "";
-  border-bottom: 1px solid white;
   stroke-width: 2px;
   stroke: #fff;
 }
@@ -399,13 +409,13 @@ color: var(--main-text-color);
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 14px;
-text-align: justify;
+text-align: center;
 color: var(--main-text-color);
-padding-left: 678px;
+/* padding-left: 678px; */
 }
 .footer-logo {
-  padding-left: 204px;
-  padding-top: 77px;
+  /* padding-left: 204px;
+  padding-top: 77px; */
 }
 .footer-item {
   display: flex;
