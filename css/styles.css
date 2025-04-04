@@ -138,9 +138,6 @@ margin-bottom: 10px;
 .avatar-position {
   padding-top: 180px;
 }
-.avatar-button {
-  margin-top: 42px;
-}
 .avatar-title {
   display: none;
 }
@@ -149,6 +146,7 @@ margin-bottom: 10px;
   font-weight: 400;
   font-size: 20px;
   color: #fff;
+  width: 300px;
 }
 .avatar-text1::after {
   content: "";
@@ -159,12 +157,11 @@ margin-bottom: 10px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.media {
+/* .media {
   display: flex;
   justify-content: end;
   align-items: center;
-
-}
+} */
 .media-item {
   display: flex;
   justify-content: end;
@@ -347,6 +344,7 @@ font-weight: 400;
 font-size: 24px;
 text-align: center;
 color: #26c7ea;
+margin-top: 42px;
 }
 .video {
   background-image: url("../images/woman_avatar.jpg");
@@ -391,6 +389,7 @@ height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 223px;
 }
 .footer-text {
@@ -399,6 +398,7 @@ font-weight: 400;
 font-size: 20px;
 text-align: center;
 color: var(--main-text-color);
+margin-right: 228px;
 }
 .footer-text::after {
   content: "";
