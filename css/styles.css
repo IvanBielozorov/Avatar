@@ -32,9 +32,6 @@ img {
 body {
   font-family: var(--font-family);
 }
-.logo {
-  margin-right: 184px;
-}
 .header-position {
   display: flex;
   align-items: center;
@@ -55,13 +52,15 @@ body {
   padding-right: 48px;
   border-bottom: 3px solid #fff;
 }
+.nav {
+  margin-left: 184px;
+}
 .nav-list {
   display: flex;
   justify-content: center;
   column-gap: 38px;
 }
 .header-button {
-  /* margin-left: 228px; */
   display: flex;
   background: #0b0e66;
   border: 2px solid #26c7ea;
@@ -75,6 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #26c6ea;
+  cursor: pointer;
 }
 .english, .ukrainian {
   font-family: var(--third-family);
@@ -84,6 +84,8 @@ text-align: center;
 color: #fff;
 display: flex;
 align-items: center;
+padding-left: 10px;
+padding-right: 10px;
 }
 .nav-link {
   font-family: var(--font-family);
@@ -98,6 +100,11 @@ align-items: center;
   margin-right: 49px;
 }
 /* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!! */
+.first-quote {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .first-quote-position {
   display: flex;
   justify-content: center;
@@ -131,7 +138,7 @@ margin-bottom: 10px;
 .avatar {
   background-image: url("../images/avatar_water.jpg");
   background-repeat: no-repeat;
-  width: 1440px;
+  max-width: 1440px;
   height: 740px;
   margin-left: auto;
   margin-right: auto;
@@ -180,6 +187,8 @@ margin-bottom: 10px;
   padding: 36px 28px;
   background: rgba(255, 255, 255, 0.7);
   flex-basis: calc((100% - 2 * 36px) / 3);
+  height: 240px;
+  padding-top: 0px;
 }
 .avatar-info-item:nth-child(1) {
   background-image: url("../images/left_arrow.png");
@@ -233,6 +242,12 @@ font-size: 24px;
 line-height: 100%;
 text-align: justify;
 color: #000;
+padding-top: 40px;
+}
+.second-quote {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .second-container {
   display: flex;
@@ -272,7 +287,7 @@ text-align: center;
 .third-quote {
   margin-left: auto;
   margin-right: auto;
-  width: 1438px;
+  max-width: 1440px;
 }
 .third-quote-position {
   display: flex;
@@ -340,7 +355,7 @@ text-align: center;
 .avatar-info {
   background-image: url("../images/islands.jpg");
   background-repeat: no-repeat;
-  width: 1440px;
+  max-width: 1440px;
   height: 704px;
   margin-left: auto;
   margin-right: auto;
@@ -367,11 +382,12 @@ font-size: 24px;
 text-align: center;
 color: #26c7ea;
 margin-top: 42px;
+cursor: pointer;
 }
 .video {
   background-image: url("../images/woman_avatar.jpg");
   background-repeat: no-repeat;
-  width: 1440px;
+  max-width: 1440px;
   height: 741px;
   margin-left: auto;
   margin-right: auto;
@@ -411,7 +427,7 @@ cursor: pointer;
   padding-bottom: 25px;
 }
 .footer-position {
-  display: flex;
+  /* display: flex; */
 }
 .footer-final {
   display: flex;
@@ -421,12 +437,27 @@ cursor: pointer;
   height: 153px;
   border: 2px solid #fff;
   margin-right: 80px;
+  margin-left: 80px;
 }
 .footer-first-div {
-  stroke-width: 2px;
-stroke: #fff;
-width: 169px;
-height: 1px;
+  border-top: 2px dashed #fff;
+  /* stroke-width: 2px;
+  stroke: #fff; */
+  /* height: 0px; */
+  width: 269px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 6px;
+}
+.footer-second-div {
+border-top: 2px dashed #fff;
+/* stroke-width: 2px;
+stroke: #fff; */
+/* height: 0px; */
+width: 194px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 6px;
 }
 .footer-text {
   font-family: var(--font-family);
@@ -435,11 +466,13 @@ font-size: 20px;
 text-align: center;
 color: var(--main-text-color);
 }
-.footer-text::after {
+/* .footer-text::after {
   content: "";
   stroke-width: 2px;
   stroke: #fff;
-}
+  width: 269px;
+  height: 1px;
+} */
 .footer-rights {
   font-family: var(--font-family);
 font-weight: 400;
@@ -448,12 +481,17 @@ text-align: center;
 color: var(--main-text-color);
 display: flex;
 align-items: end;
+padding-left: 474px;
 }
 .footer-logo {
   padding-top: 42px;
-  padding-right: 80px;
+}
+.footer-list {
+  margin-top: 45px;
 }
 .footer-item {
   display: flex;
-  justify-content: center;
+}
+.footer-item:nth-child(1) {
+    margin-bottom: 16px;
 }
