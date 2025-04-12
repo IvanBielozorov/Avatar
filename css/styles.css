@@ -35,7 +35,7 @@ body {
 .header-position {
   display: flex;
   align-items: center;
-  column-gap: 49px;
+  padding-left: 0;
 }
 .header {
   background-color: brown;
@@ -75,6 +75,7 @@ body {
   align-items: center;
   color: #26c6ea;
   cursor: pointer;
+  margin-left: auto;
 }
 .english, .ukrainian {
   font-family: var(--third-family);
@@ -97,7 +98,6 @@ padding-right: 10px;
 .switcher {
   display: flex;
   justify-content: end;
-  margin-right: 49px;
 }
 /* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!! */
 .first-quote {
@@ -157,7 +157,13 @@ margin-bottom: 10px;
   font-weight: 400;
   font-size: 20px;
   color: #fff;
-  width: 300px;
+  width: 260px;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+.avatar-content {
+  width: 376px;
+  height: 381px;
 }
 .avatar-text1::after {
   content: "";
@@ -167,6 +173,8 @@ margin-bottom: 10px;
   background-image: url("../images/little_arraw.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .media-item {
   display: flex;
@@ -483,8 +491,12 @@ display: flex;
 align-items: end;
 padding-left: 474px;
 }
+.footer-link {
+  display: flex;
+  align-items: center;
+}
 .footer-logo {
-  padding-top: 42px;
+  /* padding-top: 42px; */
 }
 .footer-list {
   margin-top: 45px;
